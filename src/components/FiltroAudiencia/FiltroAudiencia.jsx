@@ -84,7 +84,7 @@ const FiltroAudiencia = () => {
                 <i className="bi bi-check-lg text-[#C6A75E] text-2xl"></i>
               </div>
               <h3 className="text-2xl font-semibold text-[#C6A75E]">
-                Esto es para ti si:
+                Esto es para ti, si:
               </h3>
             </div>
 
@@ -114,7 +114,7 @@ const FiltroAudiencia = () => {
                 <i className="bi bi-x-lg text-red-400/80 text-2xl"></i>
               </div>
               <h3 className="text-2xl font-semibold text-gray-400">
-                Esto NO es para ti si:
+                Esto NO es para ti, si:
               </h3>
             </div>
 
