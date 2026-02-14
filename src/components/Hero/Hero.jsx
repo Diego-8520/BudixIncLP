@@ -6,6 +6,7 @@ import Fondo from "../../assets/12016.jpg";
 const Hero = () => {
   return (
     <section
+      id="hero"
       className="
         relative
         min-h-screen
@@ -40,7 +41,7 @@ const Hero = () => {
               lg:text-6xl
               xl:text-7xl
               font-bold
-              text-yellow-500
+              text-[#EAAA00]
               mb-3
             "
           >
@@ -58,7 +59,7 @@ const Hero = () => {
             lg:text-6xl
             xl:text-7xl
             font-bold
-            text-yellow-500
+            text-[#EAAA00]
             mb-4
           "
           >
@@ -77,10 +78,9 @@ const Hero = () => {
               mb-6
             "
           >
-            En Budix diseñamos sistemas de crecimiento digital para empresas que
-            buscan resultados reales, no acciones aisladas. Analizamos,
-            estructuramos y optimizamos tu marketing con método, claridad y
-            control.
+            No vendemos campañas. No vendemos contenido. Diseñamos arquitectura
+            de crecimiento. La diferencia entre ejecutar y escalar es tener un
+            sistema que funcione sin ti.
           </p>
 
           {/* CTA */}

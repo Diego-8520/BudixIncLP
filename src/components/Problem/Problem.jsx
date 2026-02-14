@@ -1,86 +1,95 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const problems = [
+const painPoints = [
   {
     id: 1,
-    title: "Público sin dirección",
-    icon: "bi-crosshair2",
+    question: "¿Por qué publicas tanto y vendes tan poco?",
+    answer: "Porque el contenido sin arquitectura de conversión es solo ruido.",
+    icon: "bi-chat-square-text",
   },
   {
     id: 2,
-    title: "Contenido sin estrategia",
-    icon: "bi-compass",
+    question: "¿Por qué tus métricas suben pero tu pipeline no?",
+    answer: "Porque estás midiendo vanidad, no conversión real.",
+    icon: "bi-graph-down",
   },
   {
     id: 3,
-    title: "Métricas sin impacto real",
-    icon: "bi-graph-up",
+    question: "¿Por qué cada mes cambias de estrategia?",
+    answer: "Porque sin sistema, confundes experimentar con improvisar.",
+    icon: "bi-arrow-left-right",
   },
   {
     id: 4,
-    title: "Cambios constantes de enfoque",
-    icon: "bi-shuffle",
+    question: "¿Por qué tu competencia crece y tú no?",
+    answer: "Porque ellos tienen estructura. Tú tienes ejecución suelta.",
+    icon: "bi-bar-chart-line",
   },
 ];
 
 const Problem = () => {
   return (
     <section id="problema" className="py-32 bg-black text-white">
-      <div className="max-w-6xl mx-auto px-6 text-center">
+      <div className="max-w-6xl mx-auto px-6">
         {/* Encabezado */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="mb-24 max-w-3xl mx-auto"
+          className="mb-20 max-w-4xl mx-auto text-center"
         >
           <h2 className="text-4xl md:text-5xl font-semibold leading-tight tracking-tight">
-            No es falta de esfuerzo.
+            Las preguntas que te haces
             <span className="block text-[#C6A75E] mt-3">
-              Es falta de estructura.
+              cuando el marketing no convierte.
             </span>
           </h2>
 
           <p className="text-gray-400 mt-6 text-lg leading-relaxed">
-            Publicas. Analizas. Ajustas.
+            Ya sabes que algo no está funcionando.
             <br />
-            Pero el crecimiento no es consistente.
+            <strong className="text-white">
+              El problema es estructural, no de esfuerzo.
+            </strong>
           </p>
         </motion.div>
 
-        {/* Grid de problemas */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-28">
-          {problems.map((item, index) => (
+        {/* Grid de pain points */}
+        <div className="space-y-6 mb-28 max-w-4xl mx-auto">
+          {painPoints.map((item, index) => (
             <motion.div
               key={item.id}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{ delay: index * 0.1 }}
               className="
-                group
                 border border-white/10
                 bg-white/[0.02]
                 rounded-xl
-                p-10
-                flex flex-col
-                items-center
-                text-center
+                p-8
                 hover:border-[#C6A75E]/40
                 transition duration-300
               "
             >
-              {/* Icono Bootstrap */}
-              <div className="mb-6 text-5xl text-white/60 group-hover:text-[#C6A75E] transition duration-300">
-                <i className={`bi ${item.icon}`} />
+              <div className="flex items-start gap-6">
+                {/* Icono */}
+                <div className="text-3xl text-white/40 flex-shrink-0 mt-1">
+                  <i className={`bi ${item.icon}`} />
+                </div>
+
+                <div className="flex-1">
+                  {/* Pregunta */}
+                  <h3 className="text-xl md:text-2xl font-medium text-white mb-4 leading-snug">
+                    {item.question}
+                  </h3>
+
+                  {/* Respuesta */}
+                  <p className="text-gray-400 text-lg leading-relaxed">
+                    {item.answer}
+                  </p>
+                </div>
               </div>
-
-              {/* Texto */}
-              <h3 className="text-lg font-medium text-white leading-snug">
-                {item.title}
-              </h3>
-
-              <div className="mt-6 h-px w-12 bg-white/10 group-hover:bg-[#C6A75E]/50 transition duration-300" />
             </motion.div>
           ))}
         </div>
@@ -90,11 +99,11 @@ const Problem = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="max-w-3xl mx-auto"
+          className="max-w-3xl mx-auto text-center"
         >
           <p className="text-3xl md:text-4xl font-light leading-tight">
-            Las redes funcionan.
-            <span className="block text-[#C6A75E] mt-3">
+            El marketing funciona.
+            <span className="block text-[#C6A75E] mt-3 font-normal">
               La improvisación no.
             </span>
           </p>

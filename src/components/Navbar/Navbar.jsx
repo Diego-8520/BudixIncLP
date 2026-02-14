@@ -4,9 +4,9 @@ import logoBlancoCircular from "../../assets/logo x blanco fondo negro circular.
 
 const navbarLinks = [
   { id: 1, title: "Inicio", link: "#hero" },
-  { id: 2, title: "Análisis", link: "#problema" },
-  { id: 3, title: "Sistema Budix", link: "#sistema" },
-  { id: 4, title: "¿Para quiénes somos?", link: "#filtro" },
+  { id: 3, title: "¿Para quienes somos?", link: "#filtro" },
+  { id: 2, title: "El problema", link: "#problema" },
+  { id: 4, title: "Sistema Budix", link: "#sistema" },
 ];
 
 const navbarRedesLinks = [
@@ -78,7 +78,7 @@ const Navbar = () => {
             <li key={item.id}>
               <a
                 href={item.link}
-                className="text-black text-lg font-medium hover:text-[#C6A75E] transition-colors duration-200"
+                className="text-black text-lg font-medium hover:text-[#EAAA00] transition-colors duration-200"
               >
                 {item.title}
               </a>
@@ -137,7 +137,7 @@ const Navbar = () => {
                 <a
                   href={item.link}
                   onClick={() => setIsOpen(false)}
-                  className="text-black text-lg font-medium hover:text-[#C6A75E] transition-colors"
+                  className="text-black text-lg font-medium hover:text-[#EAAA00] transition-colors"
                 >
                   {item.title}
                 </a>
@@ -156,7 +156,7 @@ const Navbar = () => {
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-black text-xl hover:text-[#C6A75E] transition-colors"
+                  className="text-black text-xl hover:text-[#EAAA00] transition-colors"
                 >
                   <i className={item.icon}></i>
                 </a>

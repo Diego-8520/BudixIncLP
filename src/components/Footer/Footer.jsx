@@ -29,28 +29,55 @@ const Footer = () => {
   return (
     <footer className="w-full bg-black text-white border-t border-white/10">
       <div className="max-w-6xl mx-auto px-6 py-28">
-        {/* BLOQUE CTA */}
+        {/* BLOQUE CTA - PREGUNTA REPTILIANA */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="text-center mb-24"
         >
+          {/* La pregunta + contexto de pérdida */}
           <h2 className="text-4xl md:text-5xl font-semibold tracking-tight leading-tight">
-            Si no tienes un sistema,
+            ¿Cuánto más vas a esperar
             <span className="block text-[#C6A75E] mt-3">
-              tienes improvisación.
+              para dejar de improvisar?
             </span>
           </h2>
 
-          <p className="text-gray-400 mt-6 max-w-2xl mx-auto text-lg">
-            Agenda un diagnóstico estratégico y descubre dónde está el verdadero
-            bloqueo en tu crecimiento.
+          <div className="max-w-3xl mx-auto mt-10 mb-12">
+            <div className="border-l-4 border-red-500 pl-6 py-4 bg-red-500/[0.05]">
+              <p className="text-gray-300 text-lg leading-relaxed">
+                6 meses sin sistema = 6 meses de oportunidades perdidas.
+                <br />
+                Tu competencia no está esperando.
+                <br />
+                <span className="text-white font-medium">
+                  Mientras tú dudas, ellos construyen ventaja.
+                </span>
+              </p>
+            </div>
+          </div>
+
+          {/* Declaración binaria simple */}
+          <p className="text-2xl md:text-3xl font-light text-gray-300 mb-10 leading-tight">
+            O empiezas hoy a construir estructura,
+            <span className="block text-white mt-2 font-normal">
+              o en 6 meses estarás en el mismo lugar.
+            </span>
           </p>
 
-          <div className="mt-10">
+          {/* CTA */}
+          <div className="mb-6">
             <CTA />
           </div>
+
+          <p className="text-gray-500 text-sm">
+            Diagnóstico estratégico gratuito · 45 minutos
+            <br />
+            <span className="text-gray-400">
+              El primer paso siempre es entender dónde está el bloqueo
+            </span>
+          </p>
         </motion.div>
 
         {/* SECCIÓN INSTITUCIONAL */}
@@ -89,7 +116,7 @@ const Footer = () => {
 
           {/* Declaración institucional */}
           <div className="text-gray-500 text-sm text-center md:text-right max-w-md leading-relaxed">
-            Reposicionamiento estratégico y sistemas de crecimiento.
+            Arquitectura de crecimiento para empresas que no improvisan.
             <br />© {new Date().getFullYear()} Budix Inc. Todos los derechos
             reservados.
           </div>
