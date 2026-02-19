@@ -23,8 +23,11 @@ const Cta = ({
           absolute inset-0 rounded-full
           bg-gradient-radial from-[#EAAA00] via-[#EAAA00]/50 to-transparent
           opacity-60
-          blur-sm
-          animate-[ping_2s_cubic-bezier(0,0,0.2,1)_infinite]
+
+          motion-safe:animate-[ping_2s_cubic-bezier(0,0,0.2,1)_infinite]
+          motion-reduce:animate-none
+
+          blur-0 sm:blur-sm
         "
       />
 
