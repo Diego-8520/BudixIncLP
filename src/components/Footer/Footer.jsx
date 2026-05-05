@@ -5,18 +5,18 @@ import { motion } from "framer-motion";
 const RedesLinks = [
   {
     id: 1,
-    link: "https://www.instagram.com/_incbudix/",
+    link: "https://www.instagram.com/up_sales_marketing/",
     icon: "bi-instagram",
   },
   {
     id: 2,
-    link: "https://www.facebook.com/budix_inc/",
+    link: "https://www.facebook.com/share/18RFocoR8B/?mibextid=wwXIfr",
     icon: "bi-facebook",
   },
   {
     id: 3,
-    link: "https://www.linkedin.com/company/budix-inc/",
-    icon: "bi-linkedin",
+    link: "https://www.tiktok.com/@upsales_marketing?_r=1&_t=ZS-9663yt0B8RZ",
+    icon: "bi-tiktok",
   },
   {
     id: 4,
