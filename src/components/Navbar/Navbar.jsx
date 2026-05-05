@@ -1,18 +1,17 @@
 import { useState, useEffect } from "react";
 import BotonCTA from "../../components/CTA/Cta";
-import logoBlancoCircular from "../../assets/logo x blanco fondo negro circular.png";
 
 const navbarLinks = [
   { id: 1, title: "Inicio", link: "#hero" },
   { id: 3, title: "¿Para quienes somos?", link: "#filtro" },
   { id: 2, title: "El problema", link: "#problema" },
-  { id: 4, title: "Sistema Budix", link: "#sistema" },
+  { id: 4, title: "Sistema Up Sale", link: "#sistema" },
 ];
 
 const navbarRedesLinks = [
   {
     id: 1,
-    link: "https://www.instagram.com/budix_inc/",
+    link: "https://www.instagram.com/_incbudix/",
     icon: "bi bi-instagram",
   },
   {
@@ -62,13 +61,8 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-6">
         {/* Logo */}
         <div className="flex items-center gap-5">
-          <img
-            src={logoBlancoCircular}
-            alt="Budix Inc"
-            className="h-10 w-auto transition-transform duration-300 hover:scale-105"
-          />
           <span className="text-black text-xl sm:text-2xl font-semibold font-[Inter_Tight]">
-            Budix Inc
+            Up Sale
           </span>
         </div>
 

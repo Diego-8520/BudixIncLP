@@ -59,7 +59,7 @@ const FiltroAudiencia = () => {
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-5xl font-semibold tracking-tight leading-tight">
-            Budix no es para todos.
+            Up Sale no es para todos.
             <span className="block text-[#C6A75E] mt-3">
               Y eso es exactamente lo que lo hace efectivo.
             </span>

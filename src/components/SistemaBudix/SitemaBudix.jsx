@@ -65,7 +65,7 @@ const SistemaBudix = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-semibold tracking-tight leading-tight">
-            El Sistema Budix
+            El Sistema Up Sale
             <span className="block text-[#C6A75E] mt-2">
               no ejecuta acciones aisladas.
             </span>
@@ -91,7 +91,7 @@ const SistemaBudix = () => {
               <div className="text-center">
                 <i className="bi bi-play-circle text-6xl text-[#C6A75E] mb-4"></i>
                 <p className="text-gray-400 text-lg">
-                  Cómo funciona el Sistema Budix
+                  Cómo funciona el Sistema Up Sale
                   <span className="block text-sm mt-2 text-gray-500">
                     3 minutos que cambiarán cómo ves el marketing
                   </span>

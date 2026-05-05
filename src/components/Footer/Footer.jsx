@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const RedesLinks = [
   {
     id: 1,
-    link: "https://www.instagram.com/budix_inc/",
+    link: "https://www.instagram.com/_incbudix/",
     icon: "bi-instagram",
   },
   {
@@ -86,7 +86,7 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start gap-8">
             {/* Marca */}
             <div className="text-xl font-medium tracking-wide">
-              <span className="text-[#C6A75E]">Budix</span> Inc.
+              <span className="text-[#C6A75E]">Up Sale</span>
             </div>
 
             {/* Redes */}
@@ -117,7 +117,7 @@ const Footer = () => {
           {/* Declaración institucional */}
           <div className="text-gray-500 text-sm text-center md:text-right max-w-md leading-relaxed">
             Arquitectura de crecimiento para empresas que no improvisan.
-            <br />© {new Date().getFullYear()} Budix Inc. Todos los derechos
+            <br />© {new Date().getFullYear()} Up Sale. Todos los derechos
             reservados.
           </div>
         </div>
