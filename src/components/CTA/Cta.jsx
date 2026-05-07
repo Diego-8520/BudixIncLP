@@ -1,6 +1,6 @@
 import React from "react";
 
-const PHONE_NUMBER = "573215150904";
+const PHONE_NUMBER = "3108913079";
 const DEFAULT_MESSAGE =
   "Hola, quiero solicitar un diagnóstico para mi empresa.";
 
