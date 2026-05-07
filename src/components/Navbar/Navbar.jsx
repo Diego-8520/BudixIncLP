@@ -7,6 +7,7 @@ const navbarLinks = [
   { id: 3, title: "¿Para quienes somos?", link: "#filtro" },
   { id: 2, title: "El problema", link: "#problema" },
   { id: 4, title: "Sistema Up Sale", link: "#sistema" },
+  { id: 5, title: "Casos de éxito", link: "#casos-exito" },
 ];
 
 const navbarRedesLinks = [
@@ -48,17 +49,19 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 overflow-visible isolate transition-all duration-300">
+    <nav
+      className={`fixed top-0 left-0 w-full z-50 overflow-hidden isolate transition-all duration-300 ${!isHero ? "shadow-md" : ""}`}
+    >
       <AnnouncementBar />
 
       {/* Gradiente SOLO en Hero */}
       {isHero && (
-        <div className="pointer-events-none absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-white via-white/95 to-white/90 z-[-1] backdrop-blur-[2px]" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white via-white/95 to-white/90 z-[-1] backdrop-blur-[2px]" />
       )}
 
       {/* Fondo sólido cuando NO estamos en Hero */}
       {!isHero && (
-        <div className="absolute inset-0 bg-white shadow-md z-[-1] transition-all duration-300" />
+        <div className="absolute inset-0 bg-white z-[-1] transition-all duration-300" />
       )}
 
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-6">
