@@ -15,12 +15,12 @@ const RedesLinks = [
   },
   {
     id: 3,
-    link: "https://www.tiktok.com/@upsales_marketing?_r=1&_t=ZS-9663yt0B8RZ",
+    link: "https://www.tiktok.com/@upsales_marketing",
     icon: "bi-tiktok",
   },
   {
     id: 4,
-    link: "https://wa.me/573053737373",
+    link: "https://wa.me/573108913079",
     icon: "bi-whatsapp",
   },
 ];

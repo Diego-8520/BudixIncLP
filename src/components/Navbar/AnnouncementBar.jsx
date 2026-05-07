@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const AnnouncementBar = () => {
   const [isVisible, setIsVisible] = useState(true);
 
-  const phone = "573001234567";
+  const phone = "573108913079";
   const message = "Hola, quiero solicitar mi diagnóstico gratis.";
 
   const handleClick = () => {

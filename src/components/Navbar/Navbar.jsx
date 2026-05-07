@@ -13,20 +13,24 @@ const navbarLinks = [
 const navbarRedesLinks = [
   {
     id: 1,
-    link: "https://www.instagram.com/_incbudix/",
-    icon: "bi bi-instagram",
+    link: "https://www.instagram.com/up_sales_marketing/",
+    icon: "bi-instagram",
   },
   {
     id: 2,
-    link: "https://www.facebook.com/budix_inc/",
-    icon: "bi bi-facebook",
+    link: "https://www.facebook.com/share/18RFocoR8B/?mibextid=wwXIfr",
+    icon: "bi-facebook",
   },
   {
     id: 3,
-    link: "https://www.linkedin.com/company/budix-inc/",
-    icon: "bi bi-linkedin",
+    link: "https://www.tiktok.com/@upsales_marketing?_r=1&_t=ZS-9663yt0B8RZ",
+    icon: "bi-tiktok",
   },
-  { id: 4, link: "https://wa.me/573053737373", icon: "bi bi-whatsapp" },
+  {
+    id: 4,
+    link: "https://wa.me/573108913079",
+    icon: "bi-whatsapp",
+  },
 ];
 
 const Navbar = () => {

@@ -216,7 +216,7 @@ const CaseCard = ({ caso }) => (
           className="text-xs font-semibold uppercase tracking-wide mb-1"
           style={{ color: "#0066CC" }}
         >
-          Solución Budix
+          Solución Up Sales
         </p>
         <p className="text-sm text-gray-600 leading-relaxed">{caso.solution}</p>
       </div>
@@ -345,7 +345,7 @@ const CasosExito = () => {
             <span style={{ color: "#0066CC" }}>métricas verificables.</span>
           </h2>
           <p className="text-gray-500 mt-4 text-lg max-w-2xl mx-auto leading-relaxed">
-            Empresas que transformaron su crecimiento con el sistema Budix.
+            Empresas que transformaron su crecimiento con el sistema Up Sale.
           </p>
         </motion.div>
 
