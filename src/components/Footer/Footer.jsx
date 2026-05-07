@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import CTA from "../CTA/Cta";
 import { motion } from "framer-motion";
 
@@ -39,7 +39,7 @@ const Footer = () => {
           {/* La pregunta + contexto de pérdida */}
           <h2 className="text-4xl md:text-5xl font-semibold tracking-tight leading-tight">
             ¿Cuánto más vas a esperar
-            <span className="block text-[#C6A75E] mt-3">
+            <span className="block text-[#0066CC] mt-3">
               para dejar de improvisar?
             </span>
           </h2>
@@ -86,7 +86,7 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start gap-8">
             {/* Marca */}
             <div className="text-xl font-medium tracking-wide">
-              <span className="text-[#C6A75E]">Up Sale</span>
+              <span className="text-[#0066CC]">Up Sale</span>
             </div>
 
             {/* Redes */}
@@ -103,8 +103,8 @@ const Footer = () => {
                     rounded-full
                     border border-white/10
                     text-white/70
-                    hover:text-[#C6A75E]
-                    hover:border-[#C6A75E]/50
+                    hover:text-[#0066CC]
+                    hover:border-[#0066CC]/50
                     transition-all duration-300
                   "
                 >

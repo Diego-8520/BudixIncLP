@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 
 const PHONE_NUMBER = "3108913079";
 const DEFAULT_MESSAGE =
@@ -21,7 +21,7 @@ const Cta = ({
       <span
         className="
           absolute inset-0 rounded-full
-          bg-gradient-radial from-[#EAAA00] via-[#EAAA00]/50 to-transparent
+          bg-gradient-radial from-[#0066CC] via-[#0066CC]/50 to-transparent
           opacity-60
 
           motion-safe:animate-[ping_2s_cubic-bezier(0,0,0.2,1)_infinite]
@@ -39,21 +39,21 @@ const Cta = ({
           px-10 py-4
           rounded-full
           font-semibold tracking-wide text-lg
-          text-black
+          text-white
           
           /* Gradiente luminoso de fondo */
-          bg-gradient-to-br from-[#FFD700] via-[#EAAA00] to-[#F5B800]
+          bg-gradient-to-br from-[#0080FF] via-[#0066CC] to-[#0055AA]
           
           /* Sombra visible en estado normal */
-          shadow-[0_4px_20px_rgba(234,170,0,0.4)]
+          shadow-[0_4px_20px_rgba(0,102,204,0.4)]
           
           transition-all duration-300 ease-out
           hover:scale-[1.08]
-          hover:shadow-[0_0_40px_rgba(234,170,0,0.6),0_0_80px_rgba(234,170,0,0.3)]
+          hover:shadow-[0_0_40px_rgba(0,102,204,0.6),0_0_80px_rgba(0,102,204,0.3)]
           active:scale-[1.02]
           
           focus:outline-none
-          focus-visible:ring-4 focus-visible:ring-[#EAAA00]/50 focus-visible:ring-offset-2
+          focus-visible:ring-4 focus-visible:ring-[#0066CC]/50 focus-visible:ring-offset-2
           overflow-hidden
         "
       >
@@ -69,7 +69,7 @@ const Cta = ({
         <span
           className="
             absolute inset-0 rounded-full
-            bg-gradient-to-r from-[#FFD700] via-[#FFED4E] to-[#FFD700]
+            bg-gradient-to-r from-[#0080FF] via-[#339DFF] to-[#0080FF]
             opacity-0 group-hover:opacity-100
             transition-opacity duration-500
           "
@@ -126,7 +126,7 @@ const Cta = ({
         <span
           className="
             absolute -inset-2 rounded-full
-            bg-[#EAAA00] opacity-30 blur-xl
+            bg-[#0066CC] opacity-30 blur-xl
             group-hover:opacity-50
             transition-opacity duration-300
             -z-10

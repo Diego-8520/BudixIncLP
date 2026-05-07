@@ -3,6 +3,7 @@ import Hero from "./components/Hero/Hero";
 import Problem from "./components/Problem/Problem";
 import Sistema from "./components/SistemaBudix/SitemaBudix";
 import Filtro from "./components/FiltroAudiencia/FiltroAudiencia";
+import CasosExito from "./components/CasosExito/CasosExito";
 import Footer from "./components/Footer/Footer";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Filtro />
       <Problem />
       <Sistema />
+      <CasosExito />
       <Footer />
     </div>
   );

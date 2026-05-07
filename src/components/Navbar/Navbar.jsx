@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+﻿import { useState, useEffect } from "react";
 import BotonCTA from "../../components/CTA/Cta";
+import AnnouncementBar from "./AnnouncementBar";
 
 const navbarLinks = [
   { id: 1, title: "Inicio", link: "#hero" },
@@ -48,6 +49,8 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 overflow-visible isolate transition-all duration-300">
+      <AnnouncementBar />
+
       {/* Gradiente SOLO en Hero */}
       {isHero && (
         <div className="pointer-events-none absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-white via-white/95 to-white/90 z-[-1] backdrop-blur-[2px]" />
@@ -72,7 +75,7 @@ const Navbar = () => {
             <li key={item.id}>
               <a
                 href={item.link}
-                className="text-black text-lg font-medium hover:text-[#EAAA00] transition-colors duration-200"
+                className="text-black text-lg font-medium hover:text-[#0066CC] transition-colors duration-200"
               >
                 {item.title}
               </a>
@@ -131,7 +134,7 @@ const Navbar = () => {
                 <a
                   href={item.link}
                   onClick={() => setIsOpen(false)}
-                  className="text-black text-lg font-medium hover:text-[#EAAA00] transition-colors"
+                  className="text-black text-lg font-medium hover:text-[#0066CC] transition-colors"
                 >
                   {item.title}
                 </a>
@@ -150,7 +153,7 @@ const Navbar = () => {
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-black text-xl hover:text-[#EAAA00] transition-colors"
+                  className="text-black text-xl hover:text-[#0066CC] transition-colors"
                 >
                   <i className={item.icon}></i>
                 </a>

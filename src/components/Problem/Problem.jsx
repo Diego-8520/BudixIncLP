@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import { motion } from "framer-motion";
 
 const painPoints = [
@@ -41,7 +41,7 @@ const Problem = () => {
         >
           <h2 className="text-4xl md:text-5xl font-semibold leading-tight tracking-tight">
             Las preguntas que te haces
-            <span className="block text-[#C6A75E] mt-3">
+            <span className="block text-[#0066CC] mt-3">
               cuando el marketing no convierte.
             </span>
           </h2>
@@ -68,7 +68,7 @@ const Problem = () => {
                 bg-white/[0.02]
                 rounded-xl
                 p-8
-                hover:border-[#C6A75E]/40
+                hover:border-[#0066CC]/40
                 transition duration-300
               "
             >
@@ -103,7 +103,7 @@ const Problem = () => {
         >
           <p className="text-3xl md:text-4xl font-light leading-tight">
             El marketing funciona.
-            <span className="block text-[#C6A75E] mt-3 font-normal">
+            <span className="block text-[#0066CC] mt-3 font-normal">
               La improvisación no.
             </span>
           </p>

@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import BotonCTA from "../CTA/Cta";
 import RotatingTextUse from "../ui/RotatingTextUse";
 import Fondo from "../../assets/12016.jpg";
@@ -41,7 +41,7 @@ const Hero = () => {
               lg:text-6xl
               xl:text-7xl
               font-bold
-              text-[#EAAA00]
+              text-[#0066CC]
               mb-3
             "
           >
@@ -59,7 +59,7 @@ const Hero = () => {
             lg:text-6xl
             xl:text-7xl
             font-bold
-            text-[#EAAA00]
+            text-[#0066CC]
             mb-4
           "
           >

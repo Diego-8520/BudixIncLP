@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import { motion } from "framer-motion";
 
 const paraQuienSi = [
@@ -60,7 +60,7 @@ const FiltroAudiencia = () => {
         >
           <h2 className="text-4xl md:text-5xl font-semibold tracking-tight leading-tight">
             Up Sale no es para todos.
-            <span className="block text-[#C6A75E] mt-3">
+            <span className="block text-[#0066CC] mt-3">
               Y eso es exactamente lo que lo hace efectivo.
             </span>
           </h2>
@@ -77,13 +77,13 @@ const FiltroAudiencia = () => {
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="border-2 border-[#C6A75E]/60 rounded-2xl p-10 bg-[#C6A75E]/[0.03]"
+            className="border-2 border-[#0066CC]/60 rounded-2xl p-10 bg-[#0066CC]/[0.03]"
           >
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-12 h-12 rounded-full bg-[#C6A75E]/20 flex items-center justify-center">
-                <i className="bi bi-check-lg text-[#C6A75E] text-2xl"></i>
+              <div className="w-12 h-12 rounded-full bg-[#0066CC]/20 flex items-center justify-center">
+                <i className="bi bi-check-lg text-[#0066CC] text-2xl"></i>
               </div>
-              <h3 className="text-2xl font-semibold text-[#C6A75E]">
+              <h3 className="text-2xl font-semibold text-[#0066CC]">
                 Esto es para ti, si:
               </h3>
             </div>
@@ -92,7 +92,7 @@ const FiltroAudiencia = () => {
               {paraQuienSi.map((item) => (
                 <li key={item.id} className="flex items-start gap-4">
                   <i
-                    className={`bi ${item.icon} text-[#C6A75E] text-xl flex-shrink-0 mt-1`}
+                    className={`bi ${item.icon} text-[#0066CC] text-xl flex-shrink-0 mt-1`}
                   ></i>
                   <span className="text-gray-200 leading-relaxed text-lg">
                     {item.text}
@@ -140,7 +140,7 @@ const FiltroAudiencia = () => {
           transition={{ duration: 0.6 }}
           className="max-w-3xl mx-auto text-center"
         >
-          <div className="border border-[#C6A75E]/30 rounded-xl p-8 bg-[#C6A75E]/[0.02]">
+          <div className="border border-[#0066CC]/30 rounded-xl p-8 bg-[#0066CC]/[0.02]">
             <p className="text-2xl md:text-3xl font-light text-gray-300 leading-tight">
               Si llegaste hasta aquí y sigues leyendo,
               <span className="block text-white mt-3 font-normal">

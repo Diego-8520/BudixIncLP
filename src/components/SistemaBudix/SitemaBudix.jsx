@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import { motion } from "framer-motion";
 
 const fases = [
@@ -10,7 +10,7 @@ const fases = [
       "Identificamos exactamente dónde está el bloqueo en tu crecimiento actual",
     resultado: "Claridad total sobre qué está fallando",
     icon: "bi-search",
-    color: "#C6A75E",
+    color: "#0066CC",
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const fases = [
       "Definimos con precisión a quién le hablas, qué problema resuelves y por qué eres diferente",
     resultado: "Mensaje que genera autoridad real",
     icon: "bi-bullseye",
-    color: "#C6A75E",
+    color: "#0066CC",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const fases = [
       "Estructuramos cada pieza de contenido como parte de un sistema de persuasión",
     resultado: "Contenido que convierte, no solo que informa",
     icon: "bi-diagram-3",
-    color: "#C6A75E",
+    color: "#0066CC",
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ const fases = [
     descripcion: "Ejecutamos el sistema completo con método y consistencia",
     resultado: "Marketing que opera sin improvisación",
     icon: "bi-gear",
-    color: "#C6A75E",
+    color: "#0066CC",
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ const fases = [
       "Medimos conversión real y ajustamos basados en datos, no en intuición",
     resultado: "Crecimiento predecible y escalable",
     icon: "bi-arrow-repeat",
-    color: "#C6A75E",
+    color: "#0066CC",
   },
 ];
 
@@ -66,7 +66,7 @@ const SistemaBudix = () => {
         >
           <h2 className="text-4xl md:text-5xl font-semibold tracking-tight leading-tight">
             El Sistema Up Sale
-            <span className="block text-[#C6A75E] mt-2">
+            <span className="block text-[#0066CC] mt-2">
               no ejecuta acciones aisladas.
             </span>
           </h2>
@@ -85,11 +85,11 @@ const SistemaBudix = () => {
           transition={{ duration: 0.6 }}
           className="mb-20"
         >
-          <div className="relative aspect-video rounded-2xl overflow-hidden border border-[#C6A75E]/30 bg-white/[0.02]">
+          <div className="relative aspect-video rounded-2xl overflow-hidden border border-[#0066CC]/30 bg-white/[0.02]">
             {/* Placeholder del video - reemplazar con tu video real */}
             <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-black to-gray-900">
               <div className="text-center">
-                <i className="bi bi-play-circle text-6xl text-[#C6A75E] mb-4"></i>
+                <i className="bi bi-play-circle text-6xl text-[#0066CC] mb-4"></i>
                 <p className="text-gray-400 text-lg">
                   Cómo funciona el Sistema Up Sale
                   <span className="block text-sm mt-2 text-gray-500">
@@ -120,7 +120,7 @@ const SistemaBudix = () => {
           <div className="hidden lg:block">
             <div className="relative">
               {/* Línea conectora */}
-              <div className="absolute top-12 left-0 right-0 h-0.5 bg-gradient-to-r from-[#C6A75E]/20 via-[#C6A75E]/50 to-[#C6A75E]/20" />
+              <div className="absolute top-12 left-0 right-0 h-0.5 bg-gradient-to-r from-[#0066CC]/20 via-[#0066CC]/50 to-[#0066CC]/20" />
 
               <div className="grid grid-cols-5 gap-4">
                 {fases.map((fase, index) => (
@@ -133,8 +133,8 @@ const SistemaBudix = () => {
                   >
                     {/* Número con círculo */}
                     <div className="flex justify-center mb-6">
-                      <div className="w-24 h-24 rounded-full border-2 border-[#C6A75E] bg-black flex items-center justify-center relative z-10">
-                        <span className="text-3xl font-bold text-[#C6A75E]">
+                      <div className="w-24 h-24 rounded-full border-2 border-[#0066CC] bg-black flex items-center justify-center relative z-10">
+                        <span className="text-3xl font-bold text-[#0066CC]">
                           {fase.numero}
                         </span>
                       </div>
@@ -144,7 +144,7 @@ const SistemaBudix = () => {
                     <div className="text-center">
                       <div className="mb-3">
                         <i
-                          className={`bi ${fase.icon} text-3xl text-[#C6A75E]`}
+                          className={`bi ${fase.icon} text-3xl text-[#0066CC]`}
                         ></i>
                       </div>
                       <h4 className="text-lg font-semibold text-white mb-2">
@@ -168,12 +168,12 @@ const SistemaBudix = () => {
                 initial={{ opacity: 0, x: -40 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="border border-white/10 rounded-xl p-6 bg-white/[0.02] hover:border-[#C6A75E]/40 transition duration-300"
+                className="border border-white/10 rounded-xl p-6 bg-white/[0.02] hover:border-[#0066CC]/40 transition duration-300"
               >
                 <div className="flex items-start gap-4">
                   {/* Número */}
-                  <div className="w-16 h-16 rounded-full border-2 border-[#C6A75E] bg-black flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl font-bold text-[#C6A75E]">
+                  <div className="w-16 h-16 rounded-full border-2 border-[#0066CC] bg-black flex items-center justify-center flex-shrink-0">
+                    <span className="text-2xl font-bold text-[#0066CC]">
                       {fase.numero}
                     </span>
                   </div>
@@ -182,7 +182,7 @@ const SistemaBudix = () => {
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-3">
                       <i
-                        className={`bi ${fase.icon} text-2xl text-[#C6A75E]`}
+                        className={`bi ${fase.icon} text-2xl text-[#0066CC]`}
                       ></i>
                       <h4 className="text-xl font-semibold text-white">
                         {fase.titulo}
@@ -191,7 +191,7 @@ const SistemaBudix = () => {
                     <p className="text-gray-400 leading-relaxed mb-3">
                       {fase.descripcion}
                     </p>
-                    <p className="text-[#C6A75E] text-sm font-medium">
+                    <p className="text-[#0066CC] text-sm font-medium">
                       → {fase.resultado}
                     </p>
                   </div>
@@ -206,7 +206,7 @@ const SistemaBudix = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="border-2 border-[#C6A75E]/40 rounded-2xl p-10 bg-[#C6A75E]/[0.03] mb-16"
+          className="border-2 border-[#0066CC]/40 rounded-2xl p-10 bg-[#0066CC]/[0.03] mb-16"
         >
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
@@ -230,7 +230,7 @@ const SistemaBudix = () => {
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <i className="bi bi-check-circle text-[#C6A75E] text-xl flex-shrink-0 mt-1"></i>
+                <i className="bi bi-check-circle text-[#0066CC] text-xl flex-shrink-0 mt-1"></i>
                 <div>
                   <p className="text-white font-medium">Sistema estructurado</p>
                   <p className="text-gray-500 text-sm">
