@@ -58,7 +58,7 @@ const fases = [
 
 const SistemaBudix = () => {
   return (
-    <section id="sistema" className="w-full py-32 bg-black text-white">
+    <section id="sistema" className="w-full py-30 bg-black text-white">
       <div className="max-w-6xl mx-auto px-6">
         {/* Encabezado */}
         <motion.div

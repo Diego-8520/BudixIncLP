@@ -1,5 +1,134 @@
-﻿import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
+
+const TrueFocusText = () => {
+  const phrases = ["El marketing funciona.", "La improvisación no."];
+  const animationDuration = 0.5;
+  const pauseBetweenAnimations = 2;
+  const blurAmount = 3;
+  const borderColor = "#0066CC";
+  const glowColor = "rgba(0, 102, 204, 0.65)";
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const containerRef = useRef(null);
+  const phraseRefs = useRef([]);
+  const [focusRect, setFocusRect] = useState({
+    x: 0,
+    y: 0,
+    width: 0,
+    height: 0,
+  });
+
+  useEffect(() => {
+    const interval = setInterval(
+      () => {
+        setCurrentIndex((prev) => (prev + 1) % phrases.length);
+      },
+      (animationDuration + pauseBetweenAnimations) * 1000,
+    );
+
+    return () => clearInterval(interval);
+  }, [phrases.length]);
+
+  useEffect(() => {
+    const updateFocusRect = () => {
+      if (!phraseRefs.current[currentIndex] || !containerRef.current) return;
+
+      const parentRect = containerRef.current.getBoundingClientRect();
+      const activeRect =
+        phraseRefs.current[currentIndex].getBoundingClientRect();
+
+      setFocusRect({
+        x: activeRect.left - parentRect.left,
+        y: activeRect.top - parentRect.top,
+        width: activeRect.width,
+        height: activeRect.height,
+      });
+    };
+
+    updateFocusRect();
+    window.addEventListener("resize", updateFocusRect);
+
+    return () => window.removeEventListener("resize", updateFocusRect);
+  }, [currentIndex]);
+
+  return (
+    <span
+      ref={containerRef}
+      className="relative inline-flex flex-col items-center gap-3"
+      style={{ outline: "none", userSelect: "none" }}
+    >
+      {phrases.map((phrase, index) => {
+        const isActive = index === currentIndex;
+
+        return (
+          <span
+            key={phrase}
+            ref={(el) => (phraseRefs.current[index] = el)}
+            className={`relative inline-block transition-opacity ${
+              index === 1 ? "text-[#0066CC] font-normal" : ""
+            }`}
+            style={{
+              filter: isActive ? "blur(0px)" : `blur(${blurAmount}px)`,
+              opacity: isActive ? 1 : 0.5,
+              transition: `filter ${animationDuration}s ease, opacity ${animationDuration}s ease`,
+              outline: "none",
+              userSelect: "none",
+            }}
+          >
+            {phrase}
+          </span>
+        );
+      })}
+
+      <motion.span
+        aria-hidden="true"
+        className="absolute top-0 left-0 pointer-events-none box-border border-0"
+        animate={{
+          x: focusRect.x,
+          y: focusRect.y,
+          width: focusRect.width,
+          height: focusRect.height,
+          opacity: 1,
+        }}
+        transition={{ duration: animationDuration }}
+        style={{
+          "--border-color": borderColor,
+          "--glow-color": glowColor,
+        }}
+      >
+        <span
+          className="absolute w-4 h-4 border-[3px] rounded-[3px] top-[-10px] left-[-10px] border-r-0 border-b-0"
+          style={{
+            borderColor: "var(--border-color)",
+            filter: "drop-shadow(0 0 4px var(--glow-color))",
+          }}
+        />
+        <span
+          className="absolute w-4 h-4 border-[3px] rounded-[3px] top-[-10px] right-[-10px] border-l-0 border-b-0"
+          style={{
+            borderColor: "var(--border-color)",
+            filter: "drop-shadow(0 0 4px var(--glow-color))",
+          }}
+        />
+        <span
+          className="absolute w-4 h-4 border-[3px] rounded-[3px] bottom-[-10px] left-[-10px] border-r-0 border-t-0"
+          style={{
+            borderColor: "var(--border-color)",
+            filter: "drop-shadow(0 0 4px var(--glow-color))",
+          }}
+        />
+        <span
+          className="absolute w-4 h-4 border-[3px] rounded-[3px] bottom-[-10px] right-[-10px] border-l-0 border-t-0"
+          style={{
+            borderColor: "var(--border-color)",
+            filter: "drop-shadow(0 0 4px var(--glow-color))",
+          }}
+        />
+      </motion.span>
+    </span>
+  );
+};
 
 const painPoints = [
   {
@@ -102,10 +231,7 @@ const Problem = () => {
           className="max-w-3xl mx-auto text-center"
         >
           <p className="text-3xl md:text-4xl font-light leading-tight">
-            El marketing funciona.
-            <span className="block text-[#0066CC] mt-3 font-normal">
-              La improvisación no.
-            </span>
+            <TrueFocusText />
           </p>
         </motion.div>
       </div>
