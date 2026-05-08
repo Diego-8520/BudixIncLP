@@ -30,7 +30,7 @@ const painPoints = [
 
 const Problem = () => {
   return (
-    <section id="problema" className="py-32 bg-black text-white">
+    <section id="problema" className="bg-black text-white">
       <div className="max-w-6xl mx-auto px-6">
         {/* Encabezado */}
         <motion.div

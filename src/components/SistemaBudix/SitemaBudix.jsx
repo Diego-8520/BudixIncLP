@@ -77,7 +77,7 @@ const SistemaBudix = () => {
           </p>
         </motion.div>
 
-        {/* Video Container */}
+        {/* Video Container 
         <motion.div
           id="video"
           initial={{ opacity: 0, y: 40 }}
@@ -87,7 +87,7 @@ const SistemaBudix = () => {
         >
           <div className="relative aspect-video rounded-2xl overflow-hidden border border-[#0066CC]/30 bg-white/[0.02]">
             {/* Placeholder del video - reemplazar con tu video real */}
-            <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-black to-gray-900">
+        {/*<div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-black to-gray-900">
               <div className="text-center">
                 <i className="bi bi-play-circle text-6xl text-[#0066CC] mb-4"></i>
                 <p className="text-gray-400 text-lg">
@@ -106,9 +106,9 @@ const SistemaBudix = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
-            */}
           </div>
         </motion.div>
+        */}
 
         {/* Flujo de fases - Diseño horizontal con conectores */}
         <div className="mb-20">

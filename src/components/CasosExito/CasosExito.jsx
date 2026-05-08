@@ -4,22 +4,6 @@ import { motion } from "framer-motion";
 const CASES = [
   {
     id: 1,
-    client: "ModaElite Store",
-    url: "modaelite.co",
-    industry: "E-commerce Fashion",
-    metric: "+245%",
-    metricLabel: "crecimiento en ventas",
-    revenueBefore: "$12,500 usd",
-    revenueAfter: "$43,125 usd",
-    timeline: "3 meses",
-    challenge:
-      "Tráfico alto sin conversión. Carritos abandonados sin sistema de recuperación.",
-    solution:
-      "Funnels segmentados por buyer persona + remarketing automatizado con secuencias de email.",
-    sparkData: [12, 13, 15, 17, 22, 28, 35, 38, 42, 43],
-  },
-  {
-    id: 2,
     client: "Business Colombia",
     url: "www.businesscolombia.shop",
     industry: "E-comerce B2B",
@@ -35,23 +19,7 @@ const CASES = [
     sparkData: [10, 12, 15, 19, 26, 35, 48, 65, 75, 100],
   },
   {
-    id: 3,
-    client: "Amplifica Agency",
-    url: "amplifica.agency",
-    industry: "Marketing Agency",
-    metric: "+156%",
-    metricLabel: "en ingresos recurrentes",
-    revenueBefore: "$22,000 usd",
-    revenueAfter: "$56,320 usd",
-    timeline: "3 meses",
-    challenge:
-      "Dependencia total de referidos. Sin sistema de prospección escalable ni predecible.",
-    solution:
-      "Lead magnet de alto valor + pipeline de ventas consultivas con automatización de seguimiento.",
-    sparkData: [22, 24, 27, 31, 36, 41, 47, 52, 55, 56],
-  },
-  {
-    id: 4,
+    id: 2,
     client: "La Piquiña",
     url: "www.kick.com/lapiquina",
     industry: "Creadores de Contenido",
@@ -67,7 +35,7 @@ const CASES = [
     sparkData: [2, 4, 6, 8, 12, 18, 25, 35, 50, 75, 100],
   },
   {
-    id: 5,
+    id: 3,
     client: "Casa Azul Mexican Kitchen",
     url: "www.casaazulkitchen.com",
     industry: "Gastronomía & Restaurante",
