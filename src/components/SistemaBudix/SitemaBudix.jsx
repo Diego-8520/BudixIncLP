@@ -7,48 +7,51 @@ const fases = [
     numero: "01",
     titulo: "Diagnóstico",
     descripcion:
-      "Identificamos exactamente dónde está el bloqueo en tu crecimiento actual",
-    resultado: "Claridad total sobre qué está fallando",
+      "Analizamos a fondo tu empresa para detectar fugas de dinero, errores operativos y puntos que están frenando las ventas y el crecimiento.",
+    resultado: "Identificación clara de lo que está limitando tu crecimiento",
     icon: "bi-search",
     color: "#0066CC",
   },
   {
     id: 2,
     numero: "02",
-    titulo: "Posicionamiento",
+    titulo: "Creación de estrategias",
     descripcion:
-      "Definimos con precisión a quién le hablas, qué problema resuelves y por qué eres diferente",
-    resultado: "Mensaje que genera autoridad real",
+      "Diseñamos soluciones específicas para cada problema identificado, enfocadas en aumentar ventas, optimizar recursos y mejorar la operación.",
+    resultado: "Plan de acción enfocado en ventas, eficiencia y crecimiento",
     icon: "bi-bullseye",
     color: "#0066CC",
   },
   {
     id: 3,
     numero: "03",
-    titulo: "Arquitectura de contenido",
+    titulo: "Ejecución",
     descripcion:
-      "Estructuramos cada pieza de contenido como parte de un sistema de persuasión",
-    resultado: "Contenido que convierte, no solo que informa",
-    icon: "bi-diagram-3",
+      "Ponemos en marcha las estrategias e intervenimos las áreas clave de la empresa, midiendo constantemente qué está funcionando y qué no.",
+    resultado: "Implementación ordenada con seguimiento real de resultados",
+    icon: "bi-gear",
     color: "#0066CC",
   },
   {
     id: 4,
     numero: "04",
-    titulo: "Implementación",
-    descripcion: "Ejecutamos el sistema completo con método y consistencia",
-    resultado: "Marketing que opera sin improvisación",
-    icon: "bi-gear",
+    titulo: "Optimización",
+    descripcion:
+      "Potenciamos lo que genera resultados y eliminamos lo que consume tiempo o dinero sin aportar valor. Menos desgaste, más efectividad.",
+    resultado:
+      "Operación más eficiente, rentable y enfocada en lo que funciona",
+    icon: "bi-arrow-repeat",
     color: "#0066CC",
   },
   {
     id: 5,
     numero: "05",
-    titulo: "Optimización continua",
+    titulo: "Sistematización",
     descripcion:
-      "Medimos conversión real y ajustamos basados en datos, no en intuición",
-    resultado: "Crecimiento predecible y escalable",
-    icon: "bi-arrow-repeat",
+      "Implementamos sistemas e inteligencia artificial para automatizar procesos, facilitar el trabajo del equipo y aumentar la productividad de la empresa.",
+    resultado:
+      "Procesos escalables, menos carga operativa y mayor productividad",
+    icon: "bi-cpu",
     color: "#0066CC",
   },
 ];
