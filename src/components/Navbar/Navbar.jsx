@@ -6,7 +6,7 @@ const navbarLinks = [
   { id: 1, title: "Inicio", link: "#hero" },
   { id: 3, title: "¿Para quienes somos?", link: "#filtro" },
   { id: 2, title: "El problema", link: "#problema" },
-  { id: 4, title: "Sistema Up Sale", link: "#sistema" },
+  { id: 4, title: "Sistema Up", link: "#sistema" },
   { id: 5, title: "Casos de éxito", link: "#casos-exito" },
 ];
 
